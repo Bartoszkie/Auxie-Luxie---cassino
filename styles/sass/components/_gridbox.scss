@@ -1,0 +1,234 @@
+.section-gridbox {
+  box-shadow: 0px 0px 20px #00000029;
+  border-radius: 24px;
+  background-color: #fff;
+
+  padding: 56px 0px 48px 0px;
+
+  max-width: 960px;
+  margin: 50px 32px 0px;
+
+  position: relative;
+  z-index: 200;
+
+  // transform: translateY(-30px);
+
+
+  @media screen and (min-width: 360px) {
+    margin: 50px 36px 0px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 50px 32px 0px;
+    align-self: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 50px 160px 0px;
+    max-width: 960px;
+    align-self: center;
+  }
+
+  &__places {
+    transform: translateY(-150px) !important;
+
+  }
+
+  .gridbox {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      // flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 100%;
+      column-gap: 32px;
+      row-gap: 38px;
+
+      padding: 0 48px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0 104px;
+    }
+  }
+
+  .gridbox__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+
+    position: relative;
+    border-radius: 24px;
+
+    &__span {
+      padding: 7px 24px 6px 15px;
+      border-radius: 0px 16px 16px 0px;
+
+      background-color: #F25C05;
+
+      font-weight: 400;
+      font-size: 14px;
+      font-family: "Nunito", sans-serif;
+      color: #fff;
+
+      position: absolute;
+      top: 28px;
+      left: 0px;
+    }
+
+    @media screen and (min-width: 456px) {
+      margin: 0 25px;
+      box-shadow: 0px 0px 10px #00000029;
+      // border-radius: 0 0 16px 16px;
+    }
+
+    @media screen and (min-width: 520px) {
+      margin: 0 48px;
+    }
+
+    @media screen and (min-width: 668px) {
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      // max-width: unset;
+      margin: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      box-shadow: 0px 3px 6px #00000029;
+
+      @media screen and (min-width: 456px) {
+        border-radius: 16px 16px 0px 0px;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+
+      &__headings {
+        display: flex;
+        flex-direction: column;
+
+        &__paragraph {
+          margin-top: 32px;
+
+          font-size: 12px;
+          color: #F25C05;
+          text-transform: uppercase;
+          font-family: "Nunito", sans-serif;
+          font-weight: 500;
+          line-height: 19px;
+        }
+
+        &__heading {
+          font-size: 16px;
+          color: #231841;
+          font-family: "Nunito", sans-serif;
+          font-weight: 700;
+          line-height: 16px;
+
+          &::after {
+            margin-top: 15.5px;
+            margin-left: auto;
+            margin-right: auto;
+
+            content: "";
+            display: block;
+
+            background-color: #023E73;
+            width: 80px;
+            height: 2px;
+          }
+        }
+      }
+
+      &__stories {
+        margin: 20.5px 36px 32px 32px;
+
+        color: #8d8d8d;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 100;
+        font-family: "Roboto", sans-serif;
+        text-align: left;
+
+        @media screen and (min-width: 768px) {
+          flex: 1 0 auto;
+        }
+
+        &__link {
+          text-decoration: none;
+          color: #5863F8;
+          font-weight: 500;
+          transition: .2s ease-in-out all;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &__btn {
+        max-height: 48px;
+
+        text-decoration: none;
+        padding: 14px 0;
+        margin-left: 32px !important;
+        margin-right: 32px !important;
+
+        width: 100%;
+        max-width: 296px;
+
+        border: 2px solid #F25C05;
+        border-radius: 24px;
+
+        color: #F25C05;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: 0.2s ease-in-out all;
+
+        &:hover {
+          background-color: #F25C05;
+          color: #fff;
+        }
+
+        @media screen and (min-width: 456px) {
+          margin-bottom: 44px;
+        }
+
+        @media screen and (max-width: 456px) {
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
