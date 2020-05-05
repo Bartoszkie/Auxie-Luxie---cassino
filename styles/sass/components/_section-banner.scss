@@ -1,8 +1,8 @@
 .section-banner {
-    margin-top: 52px;
+    // margin-top: 52px;
 
     width: 100%;
-    min-height: 400px;
+    // min-height: 400px;
     // background-color: #000;
 
     display: flex;
@@ -41,6 +41,8 @@
         }
 
         &__btn {
+            max-width: 296px;
+            width: 100%;
             display: inline-block;
             font-family: "Nunito", sans-serif;
             text-decoration: none;
@@ -50,7 +52,7 @@
             color: #fff;
             font-size: 16px;
             font-weight: 700;
-            padding: 13px 100px;
+            padding: 13px 0px;
             text-align: center;
             background-color: transparent;
             cursor: pointer;
@@ -58,6 +60,11 @@
             outline: none;
             -webkit-transition: 0.2s ease-in-out all;
             transition: 0.2s ease-in-out all;
+
+            &:hover {
+                color: #F25C05;
+                background-color: #fff;
+            }
         }
     }
 }
