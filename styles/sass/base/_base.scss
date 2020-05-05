@@ -15,23 +15,26 @@ html {
     flex-direction: column;
     min-height: 100vh;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-
     position: relative;
     z-index: 1;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+    &--index {
+        @include backgroundImage("../../assets/img/JPG/autostraliancasino.jpg");
+    }
 
-        width: 100%;
-        height: 100%;
+    &--crwn-casino {
+        @include backgroundImage("../../assets/img/JPG/wynn.jpg");
+    }
 
-        background-color: rgba(0, 0, 0, .5);
+    &--crwn-casino-s {
+        @include backgroundImage("../../assets/img/JPG/aria.jpg");
+    }
+
+    &--jupiter-casino {
+        @include backgroundImage("../../assets/img/JPG/mgmgrand.jpg");
+    }
+
+    &--bellagio {
+        @include backgroundImage("../../assets/img/JPG/bellagio.jpg");
     }
 }
