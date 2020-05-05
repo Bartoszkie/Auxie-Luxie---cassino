@@ -17,8 +17,12 @@
         max-width: 960px;
         // padding: 0 32px;
 
+        @media screen and (min-width: 768px) {
+            margin-left: 32px;
+        }
+
         @media screen and (min-width: 1024px) {
-            margin-left: 101px;
+            margin-left: 70px;
         }
 
         &__h1 {

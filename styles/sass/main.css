@@ -658,13 +658,13 @@ html {
 
 @media screen and (min-width: 360px) {
   .section-gridbox {
-    margin: 50px 36px 0px;
+    margin: 0px 36px 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .section-gridbox {
-    margin: 50px 32px 0px;
+    margin: 0px 32px 0px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1160,9 +1160,15 @@ html {
   max-width: 960px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-banner__info {
+    margin-left: 32px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .section-banner__info {
-    margin-left: 101px;
+    margin-left: 70px;
   }
 }
 
