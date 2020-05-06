@@ -10,7 +10,7 @@
         grid-column: 1 / -1;
 
         &>h2 {
-            margin: 30px !important;
+            margin: 37px !important;
         }
     }
 
@@ -61,14 +61,6 @@
         @media screen and (min-width: 768px) {
             padding: 0 !important;
         }
-
-        // border-radius: 0;
-
-        // margin: 16px 0;
-
-        // @media screen and (min-width: 1024px) {
-        //     width: 80%;
-        // }
     }
 
     &__heading {
@@ -102,10 +94,7 @@
 
     &__paragraph {
         color: #231841;
-
         max-width: 752px;
-
-        // margin-top: 32px;
         margin: 32px 37px 52px 37px;
 
         @media screen and (min-width: 768px) {
@@ -126,8 +115,6 @@
     &__paragraph-m0 {
         color: #231841;
         width: 100%;
-
-        // margin-top: 32px;
         margin: 16px 30px 16px 30px;
 
         @media screen and (min-width: 1024px) {
