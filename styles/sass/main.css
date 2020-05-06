@@ -172,6 +172,27 @@ html {
   }
 }
 
+.text-left--p0 {
+  text-align: left !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #231841;
+  padding: 0 30px;
+}
+
+@media screen and (min-width: 360px) {
+  .text-left--p0 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .text-left--p0 {
+    padding: 0 !important;
+  }
+}
+
 .page-header {
   width: 100%;
   padding: 11px 0px 10px 0px;
@@ -769,6 +790,23 @@ html {
   margin: 0px 32px 0px;
   position: relative;
   z-index: 200;
+}
+
+.section-gridbox--small {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-gridbox--small {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-gridbox--small {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 360px) {

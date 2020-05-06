@@ -11,6 +11,19 @@
   position: relative;
   z-index: 200;
 
+  &--small {
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: auto;
+    }
+  }
+
   @media screen and (min-width: 360px) {
     margin: 0px 36px 0px;
   }
