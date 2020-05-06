@@ -456,7 +456,7 @@ html {
   min-height: 160px;
   width: 100%;
   max-width: 960px;
-  padding: 0 32px;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,10 +473,21 @@ html {
   position: relative;
 }
 
+@media screen and (min-width: 456px) {
+  .section-banner__infobox {
+    padding: 0 32px;
+  }
+}
+
 .section-banner__infobox__details {
   width: 100%;
   max-width: 960px;
-  padding-left: 30px;
+}
+
+@media screen and (min-width: 456px) {
+  .section-banner__infobox__details {
+    padding-left: 15px;
+  }
 }
 
 .section-banner__infobox__details__h2, .section-banner__infobox__details__h1 {
