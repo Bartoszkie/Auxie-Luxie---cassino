@@ -421,6 +421,10 @@ html {
   background-position: 50%;
 }
 
+.section-banner--primary {
+  padding: 52px 0 38px;
+}
+
 .section-banner > * {
   position: relative;
   z-index: 10;
