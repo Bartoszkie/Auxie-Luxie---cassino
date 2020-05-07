@@ -1217,6 +1217,22 @@ html {
   }
 }
 
+.info__paragraph--m2 {
+  color: #231841;
+  max-width: 752px;
+  margin: 32px 2px 52px 2px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  line-height: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .info__paragraph--m2 {
+    margin: 15px 30px 52px 30px;
+  }
+}
+
 .info__paragraph--mz {
   margin: 32px 0px 0px 0px;
 }
